@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Base button style */
+  .btn {
+    @apply inline-flex appearance-none items-center justify-center select-none relative 
+    rounded-lg whitespace-nowrap align-middle border-[1px] border-transparent cursor-pointer 
+    shrink-0 outline-none leading-tight isolation-auto font-medium transition-all 
+    disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Button Sizes */
+  .btn-xs {
+    @apply h-8 min-w-8 text-xs px-2.5 gap-1;
+  }
+  .btn-sm {
+    @apply h-9 min-w-9 text-sm px-3.5 gap-2;
+  }
+  .btn-md {
+    @apply h-10 min-w-10 text-sm px-4 gap-2;
+  }
+  .btn-lg {
+    @apply h-11 min-w-11 text-base px-5 gap-3;
+  }
+  .btn-xl {
+    @apply h-12 min-w-12 text-base px-5 gap-2.5;
+  }
+
+  /* Icon Sizes (if needed for specific buttons) */
+  .btn-xs-icon {
+    @apply w-4 h-4;
+  }
+  .btn-sm-icon {
+    @apply w-4 h-4;
+  }
+  .btn-md-icon {
+    @apply w-5 h-5;
+  }
+  .btn-lg-icon {
+    @apply w-5 h-5;
+  }
+  .btn-xl-icon {
+    @apply w-5 h-5;
+  }
+
+  .btn-solid-deezer {
+    @apply bg-black text-white hover:bg-[#29282d];
+  }
+  .btn-plain-deezer {
+    @apply text-white hover:text-deezer-primary font-semibold;
+  }
+  .btn-outline-deezer {
+    @apply bg-black border border-gray-muted text-white hover:bg-[#29282d];
+  }
+
+  /* Variant */
+  .btn-solid-gray {
+    @apply bg-gray-solid text-gray-contrast hover:bg-gray-solid/90;
+  }
+  .btn-solid-red {
+    @apply bg-red-solid text-red-contrast hover:bg-red-solid/90;
+  }
+  .btn-solid-green {
+    @apply bg-green-solid text-green-contrast hover:bg-green-solid/90;
+  }
+  .btn-solid-blue {
+    @apply bg-blue-solid text-blue-contrast hover:bg-blue-solid/90;
+  }
+  .btn-solid-teal {
+    @apply bg-teal-solid text-teal-contrast hover:bg-teal-solid/90;
+  }
+  .btn-solid-pink {
+    @apply bg-pink-solid text-pink-contrast hover:bg-pink-solid/90;
+  }
+  .btn-solid-purple {
+    @apply bg-purple-solid text-purple-contrast hover:bg-purple-solid/90;
+  }
+  .btn-solid-cyan {
+    @apply bg-cyan-solid text-cyan-contrast hover:bg-cyan-solid/90;
+  }
+  .btn-solid-orange {
+    @apply bg-orange-solid text-orange-contrast hover:bg-orange-solid/90;
+  }
+  .btn-solid-yellow {
+    @apply bg-yellow-solid text-yellow-contrast hover:bg-yellow-solid/90;
+  }
+
+  /* Subtle Variant */
+  .btn-subtle-gray {
+    @apply bg-gray-subtle text-gray-fg hover:bg-gray-muted;
+  }
+  .btn-subtle-red {
+    @apply bg-red-subtle text-red-fg hover:bg-red-muted;
+  }
+  .btn-subtle-green {
+    @apply bg-green-subtle text-green-fg hover:bg-green-muted;
+  }
+  .btn-subtle-blue {
+    @apply bg-blue-subtle text-blue-fg hover:bg-blue-muted;
+  }
+  .btn-subtle-teal {
+    @apply bg-teal-subtle text-teal-fg hover:bg-teal-muted;
+  }
+  .btn-subtle-pink {
+    @apply bg-pink-subtle text-pink-fg hover:bg-pink-muted;
+  }
+  .btn-subtle-purple {
+    @apply bg-purple-subtle text-purple-fg hover:bg-purple-muted;
+  }
+  .btn-subtle-cyan {
+    @apply bg-cyan-subtle text-cyan-fg hover:bg-cyan-muted;
+  }
+  .btn-subtle-orange {
+    @apply bg-orange-subtle text-orange-fg hover:bg-orange-muted;
+  }
+  .btn-subtle-yellow {
+    @apply bg-yellow-subtle text-yellow-fg hover:bg-yellow-muted;
+  }
+
+  /* Surface Variant */
+  .btn-surface-gray {
+    @apply bg-gray-subtle text-gray-fg hover:bg-gray-muted border border-gray-muted;
+  }
+  .btn-surface-red {
+    @apply bg-red-subtle text-red-fg hover:bg-red-muted border-red-muted;
+  }
+  .btn-surface-green {
+    @apply bg-green-subtle text-green-fg hover:bg-green-muted border-green-muted;
+  }
+  .btn-surface-blue {
+    @apply bg-blue-subtle text-blue-fg hover:bg-blue-muted border-blue-muted;
+  }
+  .btn-surface-teal {
+    @apply bg-teal-subtle text-teal-fg hover:bg-teal-muted border-teal-muted;
+  }
+  .btn-surface-pink {
+    @apply bg-pink-subtle text-pink-fg hover:bg-pink-muted border-pink-muted;
+  }
+  .btn-surface-purple {
+    @apply bg-purple-subtle text-purple-fg hover:bg-purple-muted border-purple-muted;
+  }
+  .btn-surface-cyan {
+    @apply bg-cyan-subtle text-cyan-fg hover:bg-cyan-muted border-cyan-muted;
+  }
+  .btn-surface-orange {
+    @apply bg-orange-subtle text-orange-fg hover:bg-orange-muted border-orange-muted;
+  }
+  .btn-surface-yellow {
+    @apply bg-yellow-subtle text-yellow-fg hover:bg-yellow-muted border-yellow-muted;
+  }
+
+  /* Outline Variant */
+  .btn-outline-gray {
+    @apply border border-gray-muted text-gray-fg hover:bg-gray-subtle;
+  }
+  .btn-outline-red {
+    @apply border border-red-muted text-red-fg hover:bg-red-subtle;
+  }
+  .btn-outline-green {
+    @apply border border-green-muted text-green-fg hover:bg-green-subtle;
+  }
+  .btn-outline-blue {
+    @apply border border-blue-muted text-blue-fg hover:bg-blue-subtle;
+  }
+  .btn-outline-teal {
+    @apply border border-teal-muted text-teal-fg hover:bg-teal-subtle;
+  }
+  .btn-outline-pink {
+    @apply border border-pink-muted text-pink-fg hover:bg-pink-subtle;
+  }
+  .btn-outline-purple {
+    @apply border border-purple-muted text-purple-fg hover:bg-purple-subtle;
+  }
+  .btn-outline-cyan {
+    @apply border border-cyan-muted text-cyan-fg hover:bg-cyan-subtle;
+  }
+  .btn-outline-orange {
+    @apply border border-orange-muted text-orange-fg hover:bg-orange-subtle;
+  }
+  .btn-outline-yellow {
+    @apply border border-yellow-muted text-yellow-fg hover:bg-yellow-subtle;
+  }
+
+  /* Ghost Variant */
+  .btn-ghost-gray {
+    @apply text-gray-fg hover:bg-gray-subtle;
+  }
+  .btn-ghost-red {
+    @apply text-red-fg hover:bg-red-subtle;
+  }
+  .btn-ghost-green {
+    @apply text-green-fg hover:bg-green-subtle;
+  }
+  .btn-ghost-blue {
+    @apply text-blue-fg hover:bg-blue-subtle;
+  }
+  .btn-ghost-teal {
+    @apply text-teal-fg hover:bg-teal-subtle;
+  }
+  .btn-ghost-pink {
+    @apply text-pink-fg hover:bg-pink-subtle;
+  }
+  .btn-ghost-purple {
+    @apply text-purple-fg hover:bg-purple-subtle;
+  }
+  .btn-ghost-cyan {
+    @apply text-cyan-fg hover:bg-cyan-subtle;
+  }
+  .btn-ghost-orange {
+    @apply text-orange-fg hover:bg-orange-subtle;
+  }
+  .btn-ghost-yellow {
+    @apply text-yellow-fg hover:bg-yellow-subtle;
+  }
+
+  /* Plain Variant */
+  .btn-plain-gray {
+    @apply text-gray-fg;
+  }
+  .btn-plain-red {
+    @apply text-red-fg;
+  }
+  .btn-plain-green {
+    @apply text-green-fg;
+  }
+  .btn-plain-blue {
+    @apply text-blue-fg;
+  }
+  .btn-plain-teal {
+    @apply text-teal-fg;
+  }
+  .btn-plain-pink {
+    @apply text-pink-fg;
+  }
+  .btn-plain-purple {
+    @apply text-purple-fg;
+  }
+  .btn-plain-cyan {
+    @apply text-cyan-fg;
+  }
+  .btn-plain-orange {
+    @apply text-orange-fg;
+  }
+  .btn-plain-yellow {
+    @apply text-yellow-fg;
+  }
+}

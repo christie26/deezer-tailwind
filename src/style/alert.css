@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+.root {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 0.375rem;
+}
+.title {
+  font-weight: 500;
+}
+.description {
+  display: inline;
+}
+.indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+}
+.indicator .icon {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
+}
+
+/* subtle */
+.alert-error-subtle-deezer .root {
+  @apply text-black bg-deezer-warning;
+}
+.alert-error-subtle-deezer .icon {
+  @apply fill-black;
+}
+.alert-info-subtle-deezer .root {
+  @apply text-deezer-primary bg-purple-100 fill-deezer-primary;
+}
+.alert-info-subtle-deezer .icon {
+  @apply fill-deezer-primary;
+}
+
+.alert-info-subtle .root {
+  @apply text-blue-600 bg-blue-100 fill-blue-600;
+}
+.alert-info-subtle .icon {
+  @apply fill-blue-600;
+}
+.alert-warning-subtle .root {
+  @apply text-orange-600 bg-orange-100;
+}
+.alert-warning-subtle .icon {
+  @apply fill-orange-600;
+}
+.alert-success-subtle .root {
+  @apply text-green-600 bg-green-100;
+}
+.alert-success-subtle .icon {
+  @apply fill-green-600;
+}
+.alert-error-subtle .root {
+  @apply text-red-600 bg-red-100;
+}
+.alert-error-subtle .icon {
+  @apply fill-red-600;
+}
+.alert-neutral-subtle .root {
+  @apply text-gray-600 bg-gray-100;
+}
+.alert-neutral-subtle .icon {
+  @apply fill-gray-600;
+}
+
+/* solid */
+.alert-info-solid .root {
+  @apply bg-blue-600 text-blue-100;
+}
+.alert-info-solid .icon {
+  @apply fill-blue-100;
+}
+.alert-warning-solid .root {
+  @apply bg-orange-600 text-orange-100;
+}
+.alert-warning-solid .icon {
+  @apply fill-orange-100;
+}
+.alert-success-solid .root {
+  @apply bg-green-600 text-green-100;
+}
+.alert-success-solid .icon {
+  @apply fill-green-100;
+}
+.alert-error-solid .root {
+  @apply bg-red-600 text-red-100;
+}
+.alert-error-solid .icon {
+  @apply fill-red-100;
+}
+.alert-neutral-solid .root {
+  @apply bg-gray-600 text-gray-100;
+}
+.alert-neutral-solid .icon {
+  @apply fill-gray-600;
+}
+
+/* surface */
+.alert-info-surface .root {
+  @apply text-blue-600 bg-blue-100 border-blue-600;
+}
+.alert-info-surface .icon {
+  @apply fill-blue-600;
+}
+.alert-warning-surface .root {
+  @apply text-orange-600 bg-orange-100 border-orange-600;
+}
+.alert-warning-surface .icon {
+  @apply fill-orange-600;
+}
+.alert-success-surface .root {
+  @apply text-green-600 bg-green-100 border-green-600;
+}
+.alert-success-surface .icon {
+  @apply fill-green-600;
+}
+.alert-error-surface .root {
+  @apply text-red-600 bg-red-100 border-red-600;
+}
+.alert-error-surface .icon {
+  @apply fill-red-600;
+}
+.alert-neutral-surface .root {
+  @apply text-gray-600 bg-gray-100 border-gray-600;
+}
+.alert-neutral-surface .icon {
+  @apply fill-gray-600;
+}
+
+/* Size variants */
+.size-sm .root {
+  @apply gap-2 px-3 py-3 text-xs;
+}
+.size-sm .indicator {
+  @apply text-lg;
+}
+.size-md .root {
+  @apply gap-3 px-4 py-4 text-sm;
+}
+.size-md .indicator {
+  @apply text-xl;
+}
+.size-lg .root {
+  @apply gap-3 px-4 py-4 text-base;
+}
+.size-lg .indicator {
+  @apply text-2xl;
+}
