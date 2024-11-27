@@ -13,6 +13,9 @@ npm run start
 ## Chakra UI components
 I chose `Button` and `Alert` to migrate.
 
+## Preview
+![Screenshot 2024-11-27 at 7 47 25 PM](https://github.com/user-attachments/assets/f15534c5-efe6-4eb1-8601-cff8e9070c48)
+
 ### Button
 - Implemented `colorPalette`, `size`, `variant`, `loading` and `loadingText` props from **Chakra**.
 - Implemented `children` and `onClick` to make this component more compatible for `<button>`.
