@@ -30,7 +30,7 @@ Challenges
     Problem:  When I tried to make dynamic class in Button or Alert component, it doesn't know which specific classes to keep.
     Solve:    Used safelist of tailwind.config to ensure these classes are preserved.
 
-  3. Efficient combination
+  3. Implement combination efficiently
     Problem:  For example with colorPalette & variant, each combination needs different color palette.
     Decision: I couldn't find a good way do it efficiently, just implemented each cases manually. 
 
