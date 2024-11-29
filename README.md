@@ -8,6 +8,7 @@ Tailwind CSS
 ## How to run
 You can run this project locally with,
 ```
+npm i
 npm run start
 ```
 ## Chakra UI components
